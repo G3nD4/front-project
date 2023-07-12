@@ -1,11 +1,6 @@
-<script>
-	import '/src/routes/about/styles/about.scss';
-	import { base } from '$app/paths';
-</script>
-
-<div class="header">
+<div class="footer">
 	<div class="container">
-		<div class="header-title">
+		<div class="logo">
 			<svg
 				width="195"
 				height="29"
@@ -32,17 +27,34 @@
 				</defs>
 			</svg>
 		</div>
-
-		<div class="burger__header">
-			<span />
+		<div class="menu">
+			<div class="main">
+				<h5>Main</h5>
+				<span>Intro page</span>
+			</div>
+			<div class="products">
+				<h5>Products</h5>
+				<span>Americano</span>
+				<span>Latte</span>
+				<span>Cappuccino</span>
+			</div>
+			<div class="events">
+				<h5>Events</h5>
+				<span>Drinks</span>
+			</div>
+			<div class="contacts">
+				<h5>Contacts</h5>
+				<span>Instagram</span>
+				<span>Phone number</span>
+			</div>
 		</div>
 
-		<nav class="navbar">
-			<ul>
-				<li><a href="{base}/">Home</a></li>
-				<li><a href="{base}/about">About</a></li>
-				<li><a href="{base}/shop">Shop</a></li>
-			</ul>
-		</nav>
+		<div class="slider">
+			<i class="fa-solid fa-arrow-up-long fa-xl" style="color: #ffffff;" />
+		</div>
 	</div>
 </div>
+
+<style>
+	@import '/styles/_footer.scss';
+</style>

@@ -1,5 +1,4 @@
-<script>
-	import '/src/routes/about/styles/about.scss';
+<script lang="ts">
 	import { base } from '$app/paths';
 </script>
 
@@ -46,3 +45,7 @@
 		</nav>
 	</div>
 </div>
+
+<style>
+	@import '/styles/_header.scss';
+</style>
