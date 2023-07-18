@@ -1,2 +1,23 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import Benefits from '../lib/Benefits.svelte';
+	import Contacts from '../lib/Contacts.svelte';
+	import Events from '../lib/Events.svelte';
+	import Products from '../lib/Products.svelte';
+	import Welcome from '../lib/Welcome.svelte';
+</script>
+
+<main>
+	<Welcome />
+
+	<Benefits />
+
+	<Products />
+
+	<Events />
+
+	<Contacts />
+</main>
+
+<style>
+	@import '/styles/index.scss';
+</style>
