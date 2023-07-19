@@ -1,14 +1,10 @@
-<script lang="ts">
-	import { base } from '$app/paths';
-</script>
-
 <div class="drinks">
-    <div class="container">
-        <div class="title">
-            <h2>Drinks</h2>
-            <hr>
-        </div>
-    </div>
+	<div class="container">
+		<div class="title">
+			<h2>Drinks</h2>
+			<hr />
+		</div>
+	</div>
 </div>
 
 <style>

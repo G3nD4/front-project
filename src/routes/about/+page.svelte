@@ -11,23 +11,23 @@
 </script>
 
 <main>
-	<OurCompany/>
+	<OurCompany />
 
-	<OurHeritage/>
-	
-	<CoffeeCraft/>
-	
-	<OurPartners/>
-	
-	<Believe/>
-	
-	<People/>
-	
-	<Planet/>
+	<OurHeritage />
 
-	<Learn/>
-	
-	<Stories/>
+	<CoffeeCraft />
+
+	<OurPartners />
+
+	<Believe />
+
+	<People />
+
+	<Planet />
+
+	<Learn />
+
+	<Stories />
 </main>
 
 <style>

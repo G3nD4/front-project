@@ -2,12 +2,11 @@
 	// import '/static/styles/aboutStyles/_about.scss';
 	import Menu from '$lib/shop/Menu.svelte';
 	import Drinks from '$lib/shop/Drinks.svelte';
-
 </script>
 
 <main>
-	<Menu/>
-	<Drinks/>
+	<Menu />
+	<Drinks />
 </main>
 
 <style>
