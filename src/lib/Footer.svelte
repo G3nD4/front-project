@@ -1,3 +1,9 @@
+<script>
+	function test() {
+		console.log("click")
+	}
+</script>
+
 <div class="footer">
 	<div class="container">
 		<div class="logo">
@@ -37,10 +43,6 @@
 				<span>Americano</span>
 				<span>Latte</span>
 				<span>Cappuccino</span>
-			</div>
-			<div class="events">
-				<h5>Events</h5>
-				<span>Drinks</span>
 			</div>
 			<div class="contacts">
 				<h5>Contacts</h5>

@@ -1,0 +1,148 @@
+body {
+	h1 {
+		font-size: 3em;
+	}
+}
+
+.our-company {
+	.container {
+		max-width: 1080px;
+		display: flex;
+		.company {
+			max-width: 1080px;
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+	}
+}
+
+.our-heritage {
+	.container {
+		max-width: 1080px;
+		display: block;
+		margin-top: 65px;
+		p {
+			font-size: 20px;
+		}
+	}
+}
+
+.coffee-craft {
+	.container {
+		max-width: 1080px;
+		display: flex;
+		margin-top: 65px;
+		.info {
+			img {
+				width: 100%;
+			}
+			.craft-info {
+				p {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+.our-partners {
+	.container {
+		max-width: 1080px;
+		display: flex;
+		margin-top: 65px;
+		.info {
+			img {
+				width: 100%;
+			}
+			.partners-info {
+				p {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+.believe {
+	.container {
+		max-width: 1080px;
+		display: flex;
+		margin-top: 65px;
+		.info {
+			img {
+				width: 100%;
+			}
+			.believe-info {
+				p {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+.people {
+	.container {
+		max-width: 1080px;
+		display: flex;
+		margin-top: 65px;
+		.info {
+			img {
+				width: 100%;
+			}
+			.people-info {
+				p {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+.planet {
+	.container {
+		max-width: 1080px;
+		display: flex;
+		margin-top: 65px;
+		.info {
+			img {
+				width: 100%;
+			}
+			.planet-info {
+				p {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+// .learn {
+//     .container {
+//         max-width: 1080px;
+//         display: flex;
+//         margin-top: 65px;
+//         .learn-info {
+//             h2 {
+//                 font-size: 4em;
+//             }
+//         }
+//     }
+// }
+
+// .stories {
+//     .container {
+//         max-width: 1080px;
+//         display: flex;
+//         margin-top: 65px;
+//         .info {
+//             .stories-info {
+//                 p {
+//                     font-size: 20px;
+//                 }
+//             }
+//         }
+//     }
+// }

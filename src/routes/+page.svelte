@@ -1,7 +1,6 @@
 <script>
 	import Benefits from '../lib/Benefits.svelte';
 	import Contacts from '../lib/Contacts.svelte';
-	import Events from '../lib/Events.svelte';
 	import Products from '../lib/Products.svelte';
 	import Welcome from '../lib/Welcome.svelte';
 </script>
@@ -12,8 +11,6 @@
 	<Benefits />
 
 	<Products />
-
-	<Events />
 
 	<Contacts />
 </main>
