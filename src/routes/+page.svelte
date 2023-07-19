@@ -1,9 +1,9 @@
 <script>
-	import Benefits from '../lib/Benefits.svelte';
-	import Contacts from '../lib/Contacts.svelte';
-	import Events from '../lib/Events.svelte';
-	import Products from '../lib/Products.svelte';
-	import Welcome from '../lib/Welcome.svelte';
+	import Benefits from '../lib/home/Benefits.svelte';
+	import Contacts from '../lib/home/Contacts.svelte';
+	import Events from '../lib/home/Events.svelte';
+	import Products from '../lib/home/Products.svelte';
+	import Welcome from '../lib/home/Welcome.svelte';
 </script>
 
 <main>

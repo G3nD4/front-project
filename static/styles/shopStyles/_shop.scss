@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;800&display=swap');
-@import '_header';
-@import '_variables';
-@import '_welcome';
-@import '_benefits';
-@import '_products';
-@import '_events';
-@import '_contacts';
-@import '_footer';
-@import '../styles/aboutStyles/_about';
+@import '../_variables';
+@import '_drinks.scss';
 
 * {
 	font-family: 'Montserrat';

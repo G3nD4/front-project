@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;800&display=swap');
-@import '_header';
-@import '_variables';
-@import '_welcome';
-@import '_benefits';
-@import '_products';
-@import '_events';
-@import '_contacts';
-@import '_footer';
-@import '../styles/aboutStyles/_about';
+@import '../_variables';
+@import '_company';
+@import '_heritage';
+@import '_coffee';
+@import '_partners';
+@import '_believe';
+@import '_people';
+@import '_planet';
+@import '_learn';
+@import '_stories';
+
 
 * {
 	font-family: 'Montserrat';
@@ -23,7 +25,7 @@ ul {
 }
 
 a {
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 body {
@@ -74,3 +76,5 @@ button {
 	color: $mainTextColor;
 	font-size: 24px;
 }
+
+

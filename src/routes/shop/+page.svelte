@@ -1,4 +1,15 @@
 <script>
-	import '/src/routes/about/styles/about.scss';
-	import { base } from '$app/paths';
+	// import '/static/styles/aboutStyles/_about.scss';
+	import Menu from '$lib/shop/Menu.svelte';
+	import Drinks from '$lib/shop/Drinks.svelte';
+
 </script>
+
+<main>
+	<Menu/>
+	<Drinks/>
+</main>
+
+<style>
+	@import '/styles/shopStyles/_shop.scss';
+</style>
