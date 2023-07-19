@@ -83,3 +83,43 @@
 		}
 	}
 }
+
+@media (max-width: 1615px) {
+	.products {
+		.container {
+			.list {
+				.items {
+					.item {
+						margin: 0 50px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 1400px) {
+	.products {
+		.container {
+			.list {
+				.items {
+					flex-direction: column;
+					.item {
+						margin: 25px 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 840px) {
+	.products {
+		.container {
+			.info-wrapper {
+				flex-direction: column;
+			}
+		}
+	}
+}
