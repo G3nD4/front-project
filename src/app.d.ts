@@ -9,4 +9,11 @@ declare global {
 	}
 }
 
-export {};
+declare class Items {
+	id: string;
+	name: string;
+	cost: number;
+	img: string;
+}
+
+// export { Items, __global };
