@@ -1,6 +1,7 @@
 import { initializeApp } from 'firebase/app';
 import 'firebase/functions';
 import { getDatabase, ref, update } from 'firebase/database';
+import type { Cart } from './cartModel';
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -16,35 +17,23 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-// const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
+console.log(app.name);
 const database = getDatabase();
 
-export const addToCart = (prodName: string, prodPrice: string, prodVolume: string) => {
-	const name = document.querySelector(prodName);
-	const price = document.querySelector(prodPrice);
-	const volume = document.querySelector(prodVolume);
-	if (!name || !price || !volume) return;
-
-	console.log(name.textContent);
-	console.log(price.textContent);
-	console.log(volume.textContent);
-
-	const id = genrateRandomNumber(1, 1000).toString();
-	console.log(id);
-
-	saveToFirebase(id, name.textContent ?? '', price.textContent ?? '', volume.textContent ?? '');
+export const saveToFirebase = (cart: Cart) => {
+	const orderID = genrateRandomNumber(1, 1000).toString();
+	cart.products.forEach((item, index) => {
+		update(ref(database, '/orders/' + orderID + '/item-' + index), {
+			name: item.name,
+			price: item.price,
+			volume: item.volume
+		});
+	});
 };
 
 const genrateRandomNumber = (min: number, max: number) => {
 	min = Math.ceil(min);
 	max = Math.floor(max);
 	return Math.floor(Math.random() * (max - min + 1)) + min;
-};
-
-const saveToFirebase = (userID: string, name: string, price: string, vol: string) => {
-	update(ref(database, '/orders/' + userID), {
-		productName: name,
-		productPrice: price,
-		productVolume: vol
-	});
 };

@@ -1,9 +1,9 @@
 export class Product {
-	name: string = '';
-	price: string = '';
-	volume: string = '';
+	name = '';
+	price = '';
+	volume = '';
 
-	constructor({prodName = '', prodPrice = '', prodVolume = ''} = {}) {
+	constructor({ prodName = '', prodPrice = '', prodVolume = '' } = {}) {
 		this.name = prodName;
 		this.price = prodPrice;
 		this.volume = prodVolume;
@@ -19,6 +19,10 @@ export const createProductModel = (prodName: string, prodPrice: string, prodVolu
 	console.log(name.textContent);
 	console.log(price.textContent);
 	console.log(volume.textContent);
-	
-	return new Product({prodName:name.toString(), prodPrice:price.toString(), prodVolume:volume.toString()});//name, price, volume);
+
+	return new Product({
+		prodName: name.textContent ?? '',
+		prodPrice: price.textContent ?? '',
+		prodVolume: volume.textContent ?? ''
+	}); //name, price, volume);
 };

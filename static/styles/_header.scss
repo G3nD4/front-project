@@ -18,13 +18,12 @@
 		}
 
 		.navbar {
-
-			.home{
+			.home {
 				position: relative;
 			}
 
 			.home::after {
-				content: "";
+				content: '';
 				position: absolute;
 				background-color: white;
 				height: 3px;
@@ -38,12 +37,12 @@
 				width: 100%;
 			}
 
-			.about{
+			.about {
 				position: relative;
 			}
 
 			.about::after {
-				content: "";
+				content: '';
 				position: absolute;
 				background-color: white;
 				height: 3px;
@@ -56,13 +55,13 @@
 			.about:hover::after {
 				width: 100%;
 			}
-			
-			.shop{
+
+			.shop {
 				position: relative;
 			}
 
 			.shop::after {
-				content: "";
+				content: '';
 				position: absolute;
 				background-color: white;
 				height: 3px;
@@ -74,6 +73,10 @@
 
 			.shop:hover::after {
 				width: 100%;
+			}
+
+			.cart {
+				color: white;
 			}
 		}
 

@@ -1,7 +1,12 @@
 import type { Product } from '$lib/productModel';
+import { saveToFirebase } from './firebase';
 
 export class Cart {
 	products: Product[] = [];
+
+	saveToFirebase = () => {
+		saveToFirebase(this);
+	};
 
 	addToCart = (product: Product) => {
 		this.products.push(product);

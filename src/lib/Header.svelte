@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
+	import { saveToFirebase } from './cart';
 </script>
 
 <div class="header" id="header">
@@ -41,6 +42,7 @@
 				<li><a class="home" href="{base}/">Home</a></li>
 				<li><a class="about" href="{base}/about">About</a></li>
 				<li><a class="shop" href="{base}/shop">Shop</a></li>
+				<li><a class="cart" href="{base}/" on:click|preventDefault={() => {saveToFirebase();}}>Cart</a></li>
 			</ul>
 		</nav>
 	</div>
