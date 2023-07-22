@@ -17,6 +17,66 @@
 			}
 		}
 
+		.navbar {
+
+			.home{
+				position: relative;
+			}
+
+			.home::after {
+				content: "";
+				position: absolute;
+				background-color: white;
+				height: 3px;
+				width: 0;
+				left: 0;
+				bottom: -3px;
+				transition: 0.3s;
+			}
+
+			.home:hover::after {
+				width: 100%;
+			}
+
+			.about{
+				position: relative;
+			}
+
+			.about::after {
+				content: "";
+				position: absolute;
+				background-color: white;
+				height: 3px;
+				width: 0;
+				left: 0;
+				bottom: -3px;
+				transition: 0.3s;
+			}
+
+			.about:hover::after {
+				width: 100%;
+			}
+			
+			.shop{
+				position: relative;
+			}
+
+			.shop::after {
+				content: "";
+				position: absolute;
+				background-color: white;
+				height: 3px;
+				width: 0;
+				left: 0;
+				bottom: -3px;
+				transition: 0.3s;
+			}
+
+			.shop:hover::after {
+				width: 100%;
+			}
+		}
+
 		ul {
 			display: flex;
 			padding: 0;

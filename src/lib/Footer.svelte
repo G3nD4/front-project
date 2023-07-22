@@ -36,28 +36,28 @@
 			<div class="main">
 				<h5>Main</h5>
 				<a href="{base}/" on:click|preventDefault={() => scrollToElement('#homepage')}
-					><span>Intro page</span></a
+					><span class="intro-page">Intro page</span></a
 				>
 			</div>
 			<div class="products">
 				<h5>Products</h5>
 				<a href="{base}/" on:click|preventDefault={() => scrollToElement('#product')}
-					><span>Americano</span></a
+					><span class="americano">Americano</span></a
 				>
 				<a href="{base}/" on:click|preventDefault={() => scrollToElement('#product')}
-					><span>Latte</span></a
+					><span class="latte">Latte</span></a
 				>
 				<a href="{base}/" on:click|preventDefault={() => scrollToElement('#product')}
-					><span>Cappuccino</span></a
+					><span class="cappuccino">Cappuccino</span></a
 				>
 			</div>
 			<div class="contacts">
 				<h5>Contacts</h5>
 				<a href="{base}/" on:click|preventDefault={() => scrollToElement('#contacts')}
-					><span>Instagram</span></a
+					><span class="instagram">Instagram</span></a
 				>
 				<a href="{base}/" on:click|preventDefault={() => scrollToElement('#contacts')}
-					><span>Phone number</span></a
+					><span class="phone">Phone number</span></a
 				>
 			</div>
 		</div>

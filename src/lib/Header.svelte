@@ -38,9 +38,9 @@
 
 		<nav class="navbar">
 			<ul>
-				<li><a href="{base}/">Home</a></li>
-				<li><a href="{base}/about">About</a></li>
-				<li><a href="{base}/shop">Shop</a></li>
+				<li><a class="home" href="{base}/">Home</a></li>
+				<li><a class="about" href="{base}/about">About</a></li>
+				<li><a class="shop" href="{base}/shop">Shop</a></li>
 			</ul>
 		</nav>
 	</div>
