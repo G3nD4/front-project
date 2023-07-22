@@ -1,17 +1,23 @@
 <script lang="ts">
 	import { base } from '$app/paths';
+
+	import { scrollToElement } from '$lib/scroll';
 </script>
 
-<div class="welcome">
+<div class="welcome" id="homepage">
 	<div class="container">
 		<div class="info">
-			<h1>New Cafe <br />by <span>StarBucks</span></h1>
+			<h1>New Cafe <br />by <span class="starbucks">StarBucks</span></h1>
 			<p class="info-p">
 				Have time to buy the most harmonious drinks in the <br />new Starbucks coffee and don't
 				forget about the discount!
 			</p>
-			<button class="btn select">Select a coffee</button>
-			<button class="btn more">More</button>
+			<form action="{base}/shop" class="more-btn">
+				<a href="/" on:click|preventDefault={() => scrollToElement('#product')}>
+					<button type="submit" class="btn select">Select a coffee</button>
+				</a>
+				<button class="btn more">More</button>
+			</form>
 
 			<div class="achievments">
 				<div class="users">

@@ -2,7 +2,7 @@
 	import { base } from '$app/paths';
 </script>
 
-<div class="header">
+<div class="header" id="header">
 	<div class="container">
 		<div class="header-title">
 			<svg
