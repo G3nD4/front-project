@@ -1,3 +1,8 @@
+<script>
+	import { base } from '$app/paths';
+	import { scrollToElement } from '$lib/scroll';
+</script>
+
 <div class="footer">
 	<div class="container">
 		<div class="logo">
@@ -30,23 +35,37 @@
 		<div class="menu">
 			<div class="main">
 				<h5>Main</h5>
-				<span>Intro page</span>
+				<a href="{base}/" on:click|preventDefault={() => scrollToElement('#homepage')}
+					><span>Intro page</span></a
+				>
 			</div>
 			<div class="products">
 				<h5>Products</h5>
-				<span>Americano</span>
-				<span>Latte</span>
-				<span>Cappuccino</span>
+				<a href="{base}/" on:click|preventDefault={() => scrollToElement('#product')}
+					><span>Americano</span></a
+				>
+				<a href="{base}/" on:click|preventDefault={() => scrollToElement('#product')}
+					><span>Latte</span></a
+				>
+				<a href="{base}/" on:click|preventDefault={() => scrollToElement('#product')}
+					><span>Cappuccino</span></a
+				>
 			</div>
 			<div class="contacts">
 				<h5>Contacts</h5>
-				<span>Instagram</span>
-				<span>Phone number</span>
+				<a href="{base}/" on:click|preventDefault={() => scrollToElement('#contacts')}
+					><span>Instagram</span></a
+				>
+				<a href="{base}/" on:click|preventDefault={() => scrollToElement('#contacts')}
+					><span>Phone number</span></a
+				>
 			</div>
 		</div>
 
 		<div class="slider">
-			<i class="fa-solid fa-arrow-up-long fa-xl" style="color: #ffffff;" />
+			<a href="{base}/" on:click|preventDefault={() => scrollToElement('#header')}
+				><i class="fa-solid fa-arrow-up-long fa-xl" style="color: #ffffff;" /></a
+			>
 		</div>
 	</div>
 </div>
