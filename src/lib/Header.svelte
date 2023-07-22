@@ -42,7 +42,15 @@
 				<li><a class="home" href="{base}/">Home</a></li>
 				<li><a class="about" href="{base}/about">About</a></li>
 				<li><a class="shop" href="{base}/shop">Shop</a></li>
-				<li><a class="cart" href="{base}/" on:click|preventDefault={() => {saveToFirebase();}}>Cart</a></li>
+				<li>
+					<a
+						class="cart"
+						href="{base}/"
+						on:click|preventDefault={() => {
+							saveToFirebase();
+						}}>Cart</a
+					>
+				</li>
 			</ul>
 		</nav>
 	</div>

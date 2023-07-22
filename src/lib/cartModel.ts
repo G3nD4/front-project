@@ -17,8 +17,4 @@ export class Cart {
 			if (item === product) this.products.splice(index);
 		});
 	};
-
-  saveToFirebase = () => {
-    saveToFirebase(this);
-  }
 }
