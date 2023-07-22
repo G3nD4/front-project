@@ -1,26 +1,3 @@
-<script>
-	export let buttonVisibleOnPX = 200;
-    let hidden = true;
-
-    const goStart = () => {
-        document.body.scrollIntoView();
-    };
-
-    const scrollElement = () => {
-        return document.documentElement || document.body;
-    };
-
-    const handleOnScroll = () => {
-        if (scrollElement().scrollTop > buttonVisibleOnPX) {
-            hidden = false;
-        } else {
-            hidden = true;
-        }
-    };
-</script>
-
-<svelte:window on:scroll={handleOnScroll} />
-
 <div class="footer">
 	<div class="container">
 		<div class="logo">
@@ -68,7 +45,7 @@
 			</div>
 		</div>
 
-		<div class="slider" on:click={goStart}>
+		<div class="slider">
 			<i class="fa-solid fa-arrow-up-long fa-xl" style="color: #ffffff;" />
 		</div>
 	</div>

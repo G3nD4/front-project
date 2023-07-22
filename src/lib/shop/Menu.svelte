@@ -5,7 +5,3 @@
 		</div>
 	</div>
 </div>
-
-<style>
-	@import '/styles/shopStyles/_menu.scss';
-</style>
