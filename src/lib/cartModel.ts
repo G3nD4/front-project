@@ -1,4 +1,5 @@
 import type { Product } from '$lib/productModel';
+import { saveToFirebase } from './firebase';
 
 export class Cart {
 	products: Product[] = [];
@@ -12,4 +13,8 @@ export class Cart {
 			if (item === product) this.products.splice(index);
 		});
 	};
+
+  saveToFirebase = () => {
+    saveToFirebase(this);
+  }
 }
