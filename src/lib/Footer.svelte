@@ -41,29 +41,29 @@
 			</div>
 			<div class="products">
 				<h5>Products</h5>
-				<a href="/" on:click|preventDefault={() => scrollToElement('#product')}
+				<a href="{base}/" on:click|preventDefault={() => scrollToElement('#product')}
 					><span>Americano</span></a
 				>
-				<a href="/" on:click|preventDefault={() => scrollToElement('#product')}
+				<a href="{base}/" on:click|preventDefault={() => scrollToElement('#product')}
 					><span>Latte</span></a
 				>
-				<a href="/" on:click|preventDefault={() => scrollToElement('#product')}
+				<a href="{base}/" on:click|preventDefault={() => scrollToElement('#product')}
 					><span>Cappuccino</span></a
 				>
 			</div>
 			<div class="contacts">
 				<h5>Contacts</h5>
-				<a href="/" on:click|preventDefault={() => scrollToElement('#contacts')}
+				<a href="{base}/" on:click|preventDefault={() => scrollToElement('#contacts')}
 					><span>Instagram</span></a
 				>
-				<a href="/" on:click|preventDefault={() => scrollToElement('#contacts')}
+				<a href="{base}/" on:click|preventDefault={() => scrollToElement('#contacts')}
 					><span>Phone number</span></a
 				>
 			</div>
 		</div>
 
 		<div class="slider">
-			<a href="/" on:click|preventDefault={() => scrollToElement('#header')}
+			<a href="{base}/" on:click|preventDefault={() => scrollToElement('#header')}
 				><i class="fa-solid fa-arrow-up-long fa-xl" style="color: #ffffff;" /></a
 			>
 		</div>

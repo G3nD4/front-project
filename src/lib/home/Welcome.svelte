@@ -13,7 +13,7 @@
 				forget about the discount!
 			</p>
 			<form action="{base}/shop" class="more-btn">
-				<a href="/" on:click|preventDefault={() => scrollToElement('#product')}>
+				<a href="{base}/" on:click|preventDefault={() => scrollToElement('#product')}>
 					<button type="submit" class="btn select">Select a coffee</button>
 				</a>
 				<button class="btn more">More</button>
