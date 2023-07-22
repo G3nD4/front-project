@@ -1,7 +1,7 @@
 import { Cart } from "./cartModel";
 import type { Product } from "./productModel";
 
-export var cart = new Cart();
+export const cart = new Cart();
 
 export const addToCart = (product:Product) => {
     if (cart.products.length > 9) return;
@@ -11,4 +11,8 @@ export const addToCart = (product:Product) => {
 
 export const removeFromCart = (product:Product) => {
     cart.removeFromCart(product);
+}
+
+export const saveToFirebase = () => {
+  cart.saveToFirebase();
 }
