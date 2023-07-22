@@ -1,9 +1,10 @@
 <script lang="ts">
 	export let item = { id: '', name: '', img: '', cost: 0 };
+	import { base } from '$app/paths';
 </script>
 
 <div class="card">
-	<a href={'/shop/' + item.name.toLowerCase()}>
+	<a href={base + '/shop/' + item.name.toLowerCase()}>
 		<img src={item.img} alt="coffee" />
 		<div class="description">
 			<svg

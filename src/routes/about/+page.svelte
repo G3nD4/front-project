@@ -31,5 +31,5 @@
 </main>
 
 <style>
-	@import '../starbucks/static/styles/aboutStyles/_about.scss';
+	@import '/styles/aboutStyles/about.scss';
 </style>
