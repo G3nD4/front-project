@@ -5,7 +5,7 @@
 	background-color: $footerColor;
 	position: relative;
 	top: 20px;
-	height: 250px;
+	min-height: 250px;
 	.container {
 		display: flex;
 		justify-content: space-between;
@@ -33,6 +33,46 @@
 
 		.slider {
 			display: flex;
+			cursor: pointer;
+		}
+	}
+}
+
+@media (max-width: 1160px) {
+	.footer {
+		.container {
+			.logo {
+				margin-top: 25px;
+			}
+
+			.menu {
+				* {
+					margin: 0 10px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 930px) {
+	.footer {
+		.container {
+			.logo {
+				margin: 65px 0;
+				align-self: flex-start;
+			}
+
+			.menu {
+				flex-wrap: wrap;
+				* {
+					margin: 10px 10px;
+				}
+			}
+
+			.slider {
+				align-self: flex-start;
+				margin: 85px 0;
+			}
 		}
 	}
 }

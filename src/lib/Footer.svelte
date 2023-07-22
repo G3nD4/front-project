@@ -38,10 +38,6 @@
 				<span>Latte</span>
 				<span>Cappuccino</span>
 			</div>
-			<div class="events">
-				<h5>Events</h5>
-				<span>Drinks</span>
-			</div>
 			<div class="contacts">
 				<h5>Contacts</h5>
 				<span>Instagram</span>

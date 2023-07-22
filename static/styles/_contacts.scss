@@ -29,16 +29,6 @@
 			}
 		}
 
-		.lines {
-			position: absolute;
-			svg {
-				position: absolute;
-				left: 270px;
-				bottom: -725px;
-				z-index: -1;
-			}
-		}
-
 		.photo {
 			img {
 				z-index: 3;
@@ -52,6 +42,14 @@
 				position: relative;
 				z-index: 2;
 			}
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.contacts {
+		.container {
+			flex-direction: column;
 		}
 	}
 }
