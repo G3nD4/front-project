@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-  import { addToCart } from "c:/FrontProject/front-project/src/lib/firebase";
+
 </script>
 
 <div class="products">
 	<div class="container">
-		<div class="info-wrapper">
-			<h1 class="title">New Our <br />Products</h1>
+		<div class="info-wrapper" id="product">
+			<h1 class="title">New Our <br /><span class="products">Products</span></h1>
 			<p class="products-info">
 				Have time to buy the most harmonious drinks <br />in the new Starbucks coffee and don't
 				forget <br />about the discount! Starbucks coffee and <br />don't forget about the discount!

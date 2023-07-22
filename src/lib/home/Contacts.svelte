@@ -2,10 +2,10 @@
 	import { base } from '$app/paths';
 </script>
 
-<div class="contacts">
+<div class="contacts" id="contacts">
 	<div class="container">
 		<div class="info-wrapper">
-			<h1 class="title">Our <br />Contacts</h1>
+			<h1 class="title">Our <br /><span class="contacts">Contacts</span></h1>
 			<p class="description">
 				Have time to buy the most harmonious <br />drinks in the new Starbucks coffee and
 				<br />don't forget about the discount!

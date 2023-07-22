@@ -15,6 +15,12 @@
 			s p {
 				font-size: 18px;
 			}
+
+			.products {
+				background: linear-gradient(210deg, rgba(35, 114, 73, 1), rgba(53, 198, 107, 1));
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
 		}
 
 		.list {
