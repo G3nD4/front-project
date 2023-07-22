@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-  import { addToCart } from "c:/FrontProject/front-project/src/lib/firebase";
+	import { addToCart } from 'c:/FrontProject/front-project/src/lib/firebase';
 </script>
 
 <div class="products">
@@ -22,9 +22,7 @@
 						<h4 id="item1-price">3,5$</h4>
 						<p id="item1-volume">330 ml</p>
 					</div>
-					<button class="add-cart">
-            Add to cart
-          </button>
+					<button class="add-cart"> Add to cart </button>
 				</li>
 				<li class="item item2" id="item2">
 					<img src="{base}/img/yellow.png" alt="Coffee" />
