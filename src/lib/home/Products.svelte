@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	//import { addToCart } from 'c:/FrontProject/front-project/src/lib/firebase';
+	import { addToCart } from '$lib/cart';
+	import { Product, createProductModel } from '$lib/productModel';
 </script>
 
 <div class="products">
@@ -22,7 +23,9 @@
 						<h4 id="item1-price">3,5$</h4>
 						<p id="item1-volume">330 ml</p>
 					</div>
-					<button class="add-cart"> Add to cart </button>
+					<button class="add-cart" on:click|preventDefault={
+						() => {addToCart(createProductModel('#item1', '#item1-price', '#item1-volume')?? new Product)}}
+					> Add to cart </button>
 				</li>
 				<li class="item item2" id="item2">
 					<img src="{base}/img/yellow.png" alt="Coffee" />
@@ -32,7 +35,8 @@
 						<h4 id="item2-price">4$</h4>
 						<p id="item2-volume">330 ml</p>
 					</div>
-					<button class="add-cart">Add to cart</button>
+					<button class="add-cart" on:click|preventDefault={
+						() => {addToCart(createProductModel('#item2', '#item2-price', '#item2-volume')?? new Product)}}>Add to cart</button>
 				</li>
 				<li class="item item3" id="item3">
 					<img src="{base}/img/green.png" alt="Coffee" />
@@ -42,7 +46,8 @@
 						<h4 id="item3-price">5,5$</h4>
 						<p id="item3-volume">330 ml</p>
 					</div>
-					<button class="add-cart">Add to cart</button>
+					<button class="add-cart" on:click|preventDefault={
+						() => {addToCart(createProductModel('#item3', '#item3-price', '#item3-volume')?? new Product)}}>Add to cart</button>
 				</li>
 			</ul>
 		</div>
